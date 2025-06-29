@@ -1,0 +1,30 @@
+.delivery-departament{
+    height: 80px;
+    margin-top: 212px;
+}
+.delivery-departament .container{
+    width: 100%;
+ 
+}
+@media (max-width: 1350px){
+    .delivery-departament .container{
+        gap: 0px;
+    }
+    .delivery-departament .container .fast-col div p:nth-child(1),
+    .delivery-departament .container .money-col div p:nth-child(1),
+    .delivery-departament .container .customer-col div p:nth-child(1),
+    .delivery-departament .container .secure-col div p:nth-child(1){
+        font-size: 15px;
+    }
+    .delivery-departament .container .fast-col div p:nth-child(2),
+    .delivery-departament .container .money-col div p:nth-child(2),
+    .delivery-departament .container .customer-col div p:nth-child(2),
+    .delivery-departament .container .secure-col div p:nth-child(2){
+        font-size: 13px;
+    }
+}
+@media (max-width: 992px){
+    .delivery-departament{
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.navLinks-content{
+    border-top: 0.3px solid #e0e0e0;
+}
+.navLinks-content .container{
+    width: 100%;
+}
+.navLinks-content .container .col-categories{
+    min-width: 170px; 
+    height: 56px;
+}
