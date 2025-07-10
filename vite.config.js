@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Edadcom-Website/', 
+  base: '/', 
   plugins: [
     react(),
   ],
 })
+//base: '/Edadcom-Website/',
