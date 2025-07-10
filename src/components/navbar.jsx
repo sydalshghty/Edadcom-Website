@@ -5,10 +5,16 @@ import wishlistIcon from "../assets/heart.svg";
 import cartIcon from "../assets/shopping-cart-01.svg";
 import EdadcomLogo from "../assets/Edadcom_Logo-removebg-preview 1.svg";
 import searchIcon from "../assets/search-md.svg";
+import AccountDepartament from "./Account";
 import "../CSS/navbar.css";
-
+import { useState } from "react";
 function Navbar(){
+    const [showAccount,setShowAccount] = useState(false);
+    const handleShowAccount = () => {
+        setShowAccount(true)
+    }
     return(
+        <>
         <div className="w-full bg-white navbar-content">
             <div className="container flex items-center justify-between w-full h-full pt-4 pb-4">
                 <div className="logo-col">
@@ -19,7 +25,7 @@ function Navbar(){
                     <img src={searchIcon} alt="search" className="cursor-pointer icon" />
                 </div>
                 <div className="flex items-center justify-between gap-6 account-Wi-Ca-Content">
-                    <div className="flex flex-col items-center justify-center account-col">
+                    <div className="flex flex-col items-center justify-center account-col" onClick={handleShowAccount}>
                         <div className="relative flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bg-bgIcon">
                             <img src={userIcon} alt="Account" />
                         </div>
@@ -46,6 +52,12 @@ function Navbar(){
                 </div>
             </div>
         </div>
+        {showAccount ? 
+            <AccountDepartament onClose={() => setShowAccount(false)}/>
+            :
+            ""
+        }
+        </>
     )
 }
 export default Navbar;  

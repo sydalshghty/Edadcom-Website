@@ -1,6 +1,3 @@
-.login-Content{
-    margin-bottom: 400px;
-}
 .login-Content .container{
    width: 100%;
 }
@@ -198,4 +195,57 @@
     .login-Content .container .register-content .heading-register p:nth-child(2){
         font-size: 18px;
     }
+}
+.login-Content .container .signin-content form .remember-forget-col .col-remember{
+    display: flex;
+    align-items: center;
+}
+.login-Content .container .signin-content form .remember-forget-col .col-remember .remember-me{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid #57595B;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.login-Content .container .signin-content form .remember-forget-col .col-remember .remember-me.blueBG{
+    background-color: rgb(11, 119, 221);
+    border-color: transparent;
+}
+.login-Content .container .signin-content form .remember-forget-col .col-remember .remember-me .icon{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.login-Content .container .signin-content form .col-robot div .check-robot{
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.login-Content .container .signin-content form .col-robot div .check-robot.greenBG{
+    background-color: rgb(15, 153, 15);
+    border-color: transparent;
+}
+.login-Content .container .signin-content form .col-password div .display-password{
+    width: 22px;
+    height: 22px;
+    color: #8A8C8F;
+    cursor: pointer;
+}
+.login-Content .container .register-content .content-checkout div .heart-icon{
+    color: red;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
 }

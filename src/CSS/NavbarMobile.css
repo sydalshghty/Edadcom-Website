@@ -12,6 +12,9 @@
 .Navbar-Mobile .container .col-search img{
     margin-left: 5px;
 }
+.Navbar-Mobile .container .cart-bars-content{
+    display: flex;
+}
 .Navbar-Mobile .container .col-search input{
     width: 85%;
     color: rgba(138, 140, 143, 1);
@@ -19,6 +22,9 @@
 }
 .Navbar-Mobile .container .col-search input::placeholder{
     padding-left: 3px;
+}
+.Navbar-Mobile .container .col-cart .content-cart{
+    margin-right: 20px;
 }
 .Navbar-Mobile .container .col-cart .content-cart div{
     width: 12px;

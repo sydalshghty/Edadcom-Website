@@ -1,0 +1,176 @@
+.footer-departament{
+    height: 584px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+.footer-departament .container{
+}
+.footer-departament .container .footer-content{
+    height: 336px;
+    margin-bottom: 40px;
+}
+.footer-departament .container .footer-content .edadcom-content{
+    width: 312px;
+}
+.footer-departament .container .footer-content .edadcom-content .edadcom-logo {
+    margin-bottom: 40px;
+}
+.footer-departament .container .footer-content .edadcom-content .edadcom-logo .col-logo{
+}
+.footer-departament .container .footer-content .edadcom-content .edadcom-logo img{
+}
+.footer-departament .container .footer-content .edadcom-content .edadcom-logo p{
+}
+.footer-departament .container .footer-content .edadcom-content .app-download{
+}
+.footer-departament .container .footer-content .edadcom-content .app-download p{
+}
+.footer-departament .container .footer-content .edadcom-content .app-download img{
+}
+.footer-departament .container .footer-content .company-links,
+.footer-departament .container .footer-content .categories-links{
+}
+.footer-departament .container .footer-content .company-links p,
+.footer-departament .container .footer-content .categories-links p,
+.footer-departament .container .footer-content .contact-us p{
+}
+.footer-departament .container .footer-content .company-links ul,
+.footer-departament .container .footer-content .categories-links ul{
+
+}
+.footer-departament .container .footer-content .company-links ul li,
+.footer-departament .container .footer-content .categories-links ul li{
+    margin-bottom: 10px;
+     margin-left: 17px;
+}
+.footer-departament .container .footer-content .company-links ul li::before,
+.footer-departament .container .footer-content .categories-links ul li::before{
+    content: "";
+    position: absolute;
+    left: -17px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.footer-departament .container .footer-content .company-links ul li a,
+.footer-departament .container .footer-content .categories-links ul li a{
+}
+.footer-departament .container .footer-content .contact-us{ 
+}
+.footer-departament .container .footer-content .contact-us p{
+}
+.footer-departament .container .footer-content .contact-us .email-col{
+}
+.footer-departament .container .footer-content .contact-us .email-col img{
+}
+.footer-departament .container .footer-content .contact-us .email-col .link{
+}
+.footer-departament .container .footer-content .contact-us .whatsapp-col{
+}
+.footer-departament .container .footer-content .contact-us .whatsapp-col img{
+}
+.footer-departament .container .footer-content .contact-us .whatsapp-col .link{
+}
+.footer-departament .container .footer-content .contact-us .p-available,
+.footer-departament .container .footer-content .contact-us .p-today,
+.footer-departament .container .footer-content .contact-us .p-number{
+}
+.footer-departament .container .footer-content .contact-us .p-number{
+   
+}
+.footer-departament .container .paymant-content{
+}
+.footer-departament .container .paymant-content .visa-content{
+}
+.footer-departament .container .paymant-content .visa-content p{
+}
+.footer-departament .container .paymant-content .visa-content .all-paymant{
+}
+.footer-departament .container .paymant-content .visa-content .all-paymant .link{
+}
+.footer-departament .container .paymant-content .visa-content .all-paymant .link img{
+}
+.footer-departament .container .social-content{
+}
+.footer-departament .container .social-content p{
+}
+.footer-departament .container .links-social{
+}
+.footer-departament .container .links-social .link{
+}
+.footer-departament .container .links-social .link img{
+}
+.footer-departament  .copyright-content{
+   height: 72px;
+    border-top: 1px solid #515152;
+}
+.footer-departament  .copyright-content p{
+    line-height: 1.6;
+}
+@media (max-width: 1400px){
+    .footer-departament{
+        height: fit-content;
+    }
+    .footer-departament .container .footer-content{
+       flex-wrap: wrap;
+       min-height: fit-content;
+    }
+}
+@media (max-width: 992px){
+    .footer-departament .container .paymant-content .visa-content{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .footer-departament .container .footer-content .edadcom-content,
+    .footer-departament .container .footer-content .edadcom-content .app-download{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-departament .container .footer-content .edadcom-content .app-download{
+        margin-left: 0;
+    }
+    .footer-departament .container .paymant-content .visa-content .all-paymant{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .footer-departament .container .social-content{
+        display: flex;
+        flex-direction: column;
+    }
+     .footer-departament .container .social-content p{
+        margin-bottom: 10px;
+     }
+     .footer-departament .copyright-content{
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+     .footer-departament .copyright-content p{
+        font-size: 14px;
+     }
+}
+@media (max-width: 1550px){
+    .footer-departament .copyright-content{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media (max-width: 1300px){
+    .footer-departament .copyright-content{
+        padding-left: 60px;
+        padding-right: 60px;
+        height: fit-content;
+    }
+}
+@media (max-width: 1200px){
+    .footer-departament .copyright-content{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}

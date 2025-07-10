@@ -1,0 +1,22 @@
+.searchInput-content{
+  
+}
+.searchInput-content .container .col-search{
+    border: 1px solid #A4A5A8;
+    border-radius: 5px;
+}
+.searchInput-content .container .col-search input{
+    caret-color: black;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8C8F;
+    caret-color: black;
+}
+.searchInput-content .container .col-search input::placeholder{
+    padding-left: 3px;
+}
+.searchInput-content .container .col-search .icon{
+    width: 16px;
+    height: 16px;
+    color: #8A8C8F;
+}

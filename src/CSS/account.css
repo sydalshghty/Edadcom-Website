@@ -1,0 +1,18 @@
+.account-departament{
+   width: 500px;
+    height: 100%;
+}
+.account-departament .container-account .L-S-Content .login-col,
+.account-departament .container-account .C-W-Content .cart-col{
+    border-bottom: 1px solid #bababb;
+}
+@media (max-width: 1200px){
+    .account-departament{
+        right: 0;
+    }
+}
+@media (max-width: 768px){
+    .account-departament{
+        width: 375px;
+    }
+}

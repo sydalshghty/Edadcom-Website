@@ -6,7 +6,6 @@ import instagramIcon from "../assets/line-md_instagram.svg";
 import chevronRight from "../assets/chevron-right.svg";
 import { Link } from "react-router-dom";
 import "../CSS/header.css";
-
 function Header(){
     return(
         <div class="header-content w-full bg-headerBG">
@@ -39,7 +38,7 @@ function Header(){
                         <Link to={"https://x.com/Edadcom_ETC"} target="_blank">
                             <img className="w-6 h-6 cursor-pointer icon-social text-whitecolor" src={twitterIcon} alt="twitterIcon" />
                         </Link>
-                        <Link to={"https://upward-github-edadcom.odoo.com/ar/website/social/linkedin"} target="_blank">
+                        <Link to={"https://www.linkedin.com/company/edadcom-etc/"} target="_blank">
                             <img className="w-6 h-6 cursor-pointer icon-social text-whitecolor" src={linkedinIcon} alt="linkedinIcon" />
                         </Link>
                         <Link to={"https://www.youtube.com/edadcom"} target="_blank">

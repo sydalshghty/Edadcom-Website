@@ -75,3 +75,23 @@ body {
     }
 }
 /*End Global Rules*/
+ .my-swal-button{
+    width: 492px;
+    height: 48px;
+    background-color: #F26122;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: -20px;
+}
+.my-swal-button:hover{
+    background-color: #F26122;
+}
+@media (max-width: 600px){
+    .my-swal-button{
+        width: 311px;
+        font-size: 16px;
+    }
+}

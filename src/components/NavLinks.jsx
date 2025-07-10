@@ -12,10 +12,10 @@ function NavLinks(){
                 </div>
                 <ul className="flex items-center justify-center gap-6">
                     <li>
-                        <a className="text-base font-semibold text-blackcolor" href="/Home">Home</a>
+                        <a className="text-base font-semibold text-blackcolor" href="#">Home</a>
                     </li>
                     <li>
-                        <a className="text-base font-semibold text-blackcolor" href="/Shop">Shop</a>
+                        <a className="text-base font-semibold text-blackcolor" href="#">Shop</a>
                     </li>
                 </ul>
             </div>

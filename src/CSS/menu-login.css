@@ -1,0 +1,32 @@
+@media (min-width: 600px){
+    .menu-login{
+        display: none;
+    }
+}
+.menu-login{
+    height: 728px;
+}
+.menu-login .edadcom-heading{
+    height: 56px;
+}
+.menu-login .container .content-L-R .content-language,
+.menu-login .container .content-L-R .content-location{
+    border-bottom: 1px solid #bababb;
+}
+.menu-login .container .content-L-R .content-language .col-english img,
+.menu-login .container .content-L-R .content-location .riyadh-col img{
+    margin-right: 10px;
+}
+.menu-login .container .content-B-O-O .col-brands,
+.menu-login .container .content-B-O-O .col-offers,
+.menu-login .container .content-B-O-O .col-orders,
+.menu-login .container .content-categories .col-categories,
+.menu-login .container .content-categories .col-featured,
+.menu-login .container .content-categories .col-arrivals,
+.menu-login .container .content-categories .col-price-Low,
+.menu-login .container .content-categories .col-price-High{
+    border-bottom: 0.5px solid #bababb;
+}
+.menu-login .container .content-categories{
+    margin-top: 20px;
+}
