@@ -141,7 +141,7 @@
 }
 @media (max-width: 992px){
     .login-Content{
-        margin-top: 220px;
+        margin-top: 180px;
     }
     .login-Content .container .register-content,
     .login-Content .container .signin-content{
