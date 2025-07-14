@@ -13,35 +13,148 @@ import "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
-import { FaEyeSlash } from "react-icons/fa";
+//import { FaEyeSlash } from "react-icons/fa";
 import "../CSS/loginContent.css";
 import "../CSS/forgetPassword.css";
 import Swal from 'sweetalert2';
+import imgEye from "../assets/show-Password.svg";
 
 function LoginContent(){
-      const handleForgetPassword = () => {
-        Swal.fire({
+const handleForgetPassword = () => {
+  Swal.fire({
+    html: `
+      <div class="content-message">
+        <div class="col-text">
+          <h1>Forget your password?</h1>
+          <p>Enter the email address or mobile phone number associated with your Edadcom account.</p>
+        </div>
+        <div class="col-input">
+          <label for="email" class="label-input">Email address / Phone number</label>
+          <input type="email" id="email" class="input-email" placeholder="Enter your email">
+        </div>
+      </div>
+    `,
+    confirmButtonText: "Submit",
+    customClass: {
+      popup: "my-Popup",
+      confirmButton: 'my-swal-button',
+    },
+    showConfirmButton: true,
+    preConfirm: () => {
+      const email = document.getElementById("email").value.trim();
+      if (!email) {
+        alert("Please enter your email or phone number");
+        return false;
+      }
+      return email;
+    }
+  }).then((result) => {
+    if (result.isConfirmed && result.value) {
+      Swal.fire({
         html: `
-        <div class="content-message">
+          <div class="content-verify-code">
             <div class="col-text">
-                <h1>Forget your password?</h1>
-                <p>Enter the email address or mobile phone number associated with your  Edadcom account.</p>
-            <div/>
-            <div class="col-input">
-                <label for="email" class="label-input">Email address / Phone number</label>
-                <input type="email" id="email" class="input-email" placeholder="Enter your email">
+              <h1>Verify Code</h1>
+              <p>Enter the verification code sent to your email or phone number</p>
             </div>
-        <div/>
-        `, 
-        confirmButtonText: "Submit",
+            <div class="col-input">
+              <label for="code" class="label-input">Code</label>
+              <input type="text" id="code" class="input-email" placeholder="Enter code">
+            </div>
+            <div class="resend-code">
+              <p>Didn’t receive a code?</p>
+              <p><a href="#">Resend code</a></p>
+            </div>
+          </div>
+        `,
+        confirmButtonText: "Continue",
         customClass: {
-            popup: "my-Popup",
-            confirmButton: 'my-swal-button',
+          popup: "my-Popup",
+          confirmButton: 'my-verify-button',
         },
-        showConfirmButton: true,    
-        });
-  };
+        showConfirmButton: true,
+        preConfirm: () => {
+          const code = document.getElementById("code").value.trim();
+          if (!code) {
+            alert("Please enter the verification code");
+            return false;
+          }
+          return code;
+        }
+      }).then((verifyResult) => {
+        if (verifyResult.isConfirmed && verifyResult.value) {
+          Swal.fire({
+            html: `
+              <div class="content-set-newPassword">
+                <div class="col-text">
+                  <h1>Set New password</h1>
+                  <p>Your previous password has been reset. Please set a new password for your account.</p>
+                </div>
+
+                <div class="col-input new-password">
+                  <label for="new-password" class="label-input">New Password</label>
+                  <div class="col-input input-with-icon">
+                    <input type="password" id="new-password" class="input-email" placeholder="********">
+                    <i class="far fa-eye icon-eye" id="toggle-new-password"></i>
+                  </div>
+                </div>
+
+                <div class="col-input confirm-password">
+                  <label for="confirm-password" class="label-input">Confirm New Password</label>
+                  <div class="col-input input-with-icon">
+                    <input type="password" id="confirm-password" class="input-email" placeholder="********">
+                    <i class="far fa-eye icon-eye" id="toggle-confirm-password"></i>
+                  </div>
+                </div>
+              </div>
+            `,
+            confirmButtonText: "Set password",
+            customClass: {
+              popup: "my-Popup-password",
+              confirmButton: 'set-password-button',
+            },
+            didOpen: () => {
+              // Toggle New Password
+              const newPasswordInput = document.getElementById("new-password");
+              const toggleNew = document.getElementById("toggle-new-password");
+
+              toggleNew.addEventListener("click", () => {
+                if (newPasswordInput.type === "password") {
+                  newPasswordInput.type = "text";
+                  toggleNew.classList.remove("fa-eye");
+                  toggleNew.classList.add("fa-eye-slash");
+                } else {
+                  newPasswordInput.type = "password";
+                  toggleNew.classList.remove("fa-eye-slash");
+                  toggleNew.classList.add("fa-eye");
+                }
+              });
+
+              // Toggle Confirm Password
+              const confirmPasswordInput = document.getElementById("confirm-password");
+              const toggleConfirm = document.getElementById("toggle-confirm-password");
+
+              toggleConfirm.addEventListener("click", () => {
+                if (confirmPasswordInput.type === "password") {
+                  confirmPasswordInput.type = "text";
+                  toggleConfirm.classList.remove("fa-eye");
+                  toggleConfirm.classList.add("fa-eye-slash");
+                } else {
+                  confirmPasswordInput.type = "password";
+                  toggleConfirm.classList.remove("fa-eye-slash");
+                  toggleConfirm.classList.add("fa-eye");
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+};
+
     //rememberCheck
     const [appearCheck,setAppearCheck] = useState(false);
     const handleCheck = () => {
@@ -93,7 +206,7 @@ function LoginContent(){
         setHeart(!heart);
     }
     return(
-        <div className="w-full mt-8 login-Content">
+        <div className="w-full mt-7 login-Content">
             <div className="container flex justify-between w-full">
                 <div className="pt-8 pb-8 pl-4 pr-4 bg-white rounded-lg signin-content">
                     <div className="flex items-center gap-4 heading-signin">
@@ -124,8 +237,8 @@ function LoginContent(){
                                         changeTypeInputToPassword();
                                     }} />
                                     :
-                                    <FaEyeSlash className="display-password" onClick={() => {
-                                        handlePassword();
+                                    <FontAwesomeIcon icon={faEyeSlash} className="display-password" onClick={() => {
+                                      handlePassword();
                                         changeTypeInputToText();
                                     }}/>
                                 }

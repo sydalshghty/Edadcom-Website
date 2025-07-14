@@ -6,8 +6,9 @@
 }
 .navLinks-content .container .col-categories{
     min-width: 170px; 
-    height: 56px;
+    height: 100%;
     transition: background-color 0.5s ease;
+    margin-top: -1px;
 }
 .navLinks-content .container .col-categories:hover{
     background-color: #ec4b06;

@@ -21,10 +21,10 @@ function Navbar(){
                     <img src={EdadcomLogo} alt="Edadcom" />
                 </div>
                 <div className="relative flex items-center justify-between pt-3 pb-3 pl-4 pr-4 col-search">
-                    <input type="search" className="w-full h-full text-base font-semibold border-none outline-none text-textcolor" placeholder="Search"/>
+                    <input type="search" className="w-full h-full text-base font-medium border-none outline-none font-poppins text-textcolor" placeholder="Search"/>
                     <img src={searchIcon} alt="search" className="cursor-pointer icon" />
                 </div>
-                <div className="flex items-center justify-between gap-6 account-Wi-Ca-Content">
+                <div className="flex items-center justify-between gap-6 mt-5 account-Wi-Ca-Content">
                     <div className="flex flex-col items-center justify-center account-col" onClick={handleShowAccount}>
                         <div className="relative flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bg-bgIcon">
                             <img src={userIcon} alt="Account" />

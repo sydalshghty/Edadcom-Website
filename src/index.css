@@ -21,8 +21,9 @@ ul{
     min-width: 100%;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
   
 /*Small*/
 @media (min-width: 768px){
@@ -75,7 +76,9 @@ body {
     }
 }
 /*End Global Rules*/
- .my-swal-button{
+ .my-swal-button,
+ .my-verify-button,
+ .set-password-button{
     width: 492px;
     height: 48px;
     background-color: #F26122;
@@ -86,11 +89,19 @@ body {
     color: #FFFFFF;
     margin-top: -20px;
 }
-.my-swal-button:hover{
+.my-verify-button{
+    position: absolute;
+    bottom: 60px;
+}
+.my-swal-button:hover,
+.my-verify-button:hover,
+.set-password-button:hover{
     background-color: #F26122;
 }
 @media (max-width: 600px){
-    .my-swal-button{
+    .my-swal-button,
+    .my-verify-button,
+    .set-password-button{
         width: 311px;
         font-size: 16px;
     }

@@ -8,27 +8,27 @@ import { Link } from "react-router-dom";
 import "../CSS/header.css";
 function Header(){
     return(
-        <div class="header-content w-full bg-headerBG">
+        <div class="header-content w-full">
                 <div class="container flex items-center content-center pt-2 pb-2 justify-between">
                     <div class="english-col flex items-center">
-                        <p className="mr-1 text-base font-normal capitalize text-whitecolor">English (US)</p>
+                        <p className="mr-1 text-base capitalize font-extralight text-whitecolor font-poppins">English (US)</p>
                         <img className="cursor-pointer icon text-whitecolor" src={chevronRight} alt="chevron-Right" />
                     </div>
                     <div class="free-col">
-                        <p className="text-base font-normal text-whitecolor">Free Returns. Standard Shipping. Orders 100SAR.</p>
+                        <p className="text-base text-whitecolor font-poppins font-extralight">Free Returns. Standard Shipping. Orders 100SAR.</p>
                     </div>
                     <ul className="flex gap-8 list-none">
                         <li>
-                            <Link to={"/Contact Us"} className="text-base font-normal list-none text-whitecolor">Contact Us</Link>  
+                            <Link to={"/Contact Us"} className="text-base list-none text-whitecolor font-poppins font-extralight">Contact Us</Link>  
                         </li>
                         <li>
-                            <Link to={"/About US"} className="text-base font-normal list-none text-whitecolor">About US</Link>
+                            <Link to={"/About US"} className="text-base list-none text-whitecolor font-poppins font-extralight">About US</Link>
                         </li>
                         <li>
-                            <Link to={"/Terms"} className="text-base font-normal list-none text-whitecolor">Terms</Link>
+                            <Link to={"/Terms"} className="text-base list-none text-whitecolor font-poppins font-extralight">Terms</Link>
                         </li>
                         <li>
-                            <Link to={"/FQA"} className="text-base font-normal list-none text-whitecolor">FQA</Link>
+                            <Link to={"/FQA"} className="text-base list-none text-whitecolor font-poppins font-extralight">FQA</Link>
                         </li>
                     </ul>
                     <div class="icons-social flex gap-4">
