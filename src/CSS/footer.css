@@ -3,8 +3,6 @@
     margin-top: 120px;
     overflow: hidden;
 }
-.footer-departament .container{
-}
 .footer-departament .container .footer-content{
     height: 336px;
     margin-bottom: 40px;
@@ -14,29 +12,6 @@
 }
 .footer-departament .container .footer-content .edadcom-content .edadcom-logo {
     margin-bottom: 40px;
-}
-.footer-departament .container .footer-content .edadcom-content .edadcom-logo .col-logo{
-}
-.footer-departament .container .footer-content .edadcom-content .edadcom-logo img{
-}
-.footer-departament .container .footer-content .edadcom-content .edadcom-logo p{
-}
-.footer-departament .container .footer-content .edadcom-content .app-download{
-}
-.footer-departament .container .footer-content .edadcom-content .app-download p{
-}
-.footer-departament .container .footer-content .edadcom-content .app-download img{
-}
-.footer-departament .container .footer-content .company-links,
-.footer-departament .container .footer-content .categories-links{
-}
-.footer-departament .container .footer-content .company-links p,
-.footer-departament .container .footer-content .categories-links p,
-.footer-departament .container .footer-content .contact-us p{
-}
-.footer-departament .container .footer-content .company-links ul,
-.footer-departament .container .footer-content .categories-links ul{
-
 }
 .footer-departament .container .footer-content .company-links ul li,
 .footer-departament .container .footer-content .categories-links ul li{
@@ -52,54 +27,6 @@
     height: 5px;
     border-radius: 50%;
     background-color: #FFFFFF;
-}
-.footer-departament .container .footer-content .company-links ul li a,
-.footer-departament .container .footer-content .categories-links ul li a{
-}
-.footer-departament .container .footer-content .contact-us{ 
-}
-.footer-departament .container .footer-content .contact-us p{
-}
-.footer-departament .container .footer-content .contact-us .email-col{
-}
-.footer-departament .container .footer-content .contact-us .email-col img{
-}
-.footer-departament .container .footer-content .contact-us .email-col .link{
-}
-.footer-departament .container .footer-content .contact-us .whatsapp-col{
-}
-.footer-departament .container .footer-content .contact-us .whatsapp-col img{
-}
-.footer-departament .container .footer-content .contact-us .whatsapp-col .link{
-}
-.footer-departament .container .footer-content .contact-us .p-available,
-.footer-departament .container .footer-content .contact-us .p-today,
-.footer-departament .container .footer-content .contact-us .p-number{
-}
-.footer-departament .container .footer-content .contact-us .p-number{
-   
-}
-.footer-departament .container .paymant-content{
-}
-.footer-departament .container .paymant-content .visa-content{
-}
-.footer-departament .container .paymant-content .visa-content p{
-}
-.footer-departament .container .paymant-content .visa-content .all-paymant{
-}
-.footer-departament .container .paymant-content .visa-content .all-paymant .link{
-}
-.footer-departament .container .paymant-content .visa-content .all-paymant .link img{
-}
-.footer-departament .container .social-content{
-}
-.footer-departament .container .social-content p{
-}
-.footer-departament .container .links-social{
-}
-.footer-departament .container .links-social .link{
-}
-.footer-departament .container .links-social .link img{
 }
 .footer-departament  .copyright-content{
    height: 72px;
@@ -172,5 +99,38 @@
     .footer-departament .copyright-content{
         padding-left: 40px !important;
         padding-right: 40px !important;
+    }
+}
+@media (max-width: 600px){
+    .footer-departament .container .footer-content{
+        justify-content: center;
+    }
+    .footer-departament .container .footer-content .contact-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-departament .container .footer-content .company-links ul,
+    .footer-departament .container .footer-content .categories-links ul{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer-departament .container .footer-content .categories-links{
+        margin-left: 60px;
+    }
+    .footer-departament .container .footer-content .company-links p,
+    .footer-departament .container .footer-content .categories-links p,
+    .footer-departament .container .footer-content .contact-us p,
+    .footer-departament .container .footer-content .company-links ul li a,
+    .footer-departament .container .footer-content .categories-links ul li a,
+    .footer-departament .container .footer-content .contact-us .email-col .link,
+    .footer-departament .container .footer-content .contact-us .whatsapp-col .link{
+        font-size: 17px;
+        font-weight: 200;
+    }
+    .footer-departament .container .paymant-content .visa-content .all-paymant .link img{
+        width: 60px;
+        height: 80px;
     }
 }

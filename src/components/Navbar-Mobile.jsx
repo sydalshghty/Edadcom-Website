@@ -12,14 +12,14 @@ function NavbarMobile(){
     }
     return(
         <>
-        <div className="w-full shadow-md Navbar-Mobile h-11">
+        <div className="w-full shadow-md h-14 Navbar-Mobile">
             <div className="container flex items-center justify-between w-full h-full">
                 <div className=" col-logo">
                     <img src={EdadcomLogo} alt="edadcom-logo" className="w-full h-full"/>
                 </div>
-                <div className="cart-bars-content">
+                <div className="flex items-center justify-center cart-bars-content">
                     <div className="col-cart">
-                        <div className="relative flex items-center justify-center w-8 h-6 rounded-full cursor-pointer content-cart bg-bgIcon">
+                        <div className="relative flex items-center justify-center w-8 h-8 rounded-full cursor-pointer content-cart bg-bgIcon">
                             <img className="w-6 h-6" src={cartIcon} alt="cart" />
                             <div className="col-number">
                                 <p>0</p>

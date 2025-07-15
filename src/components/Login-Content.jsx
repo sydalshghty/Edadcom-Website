@@ -15,11 +15,10 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
-//import { FaEyeSlash } from "react-icons/fa";
 import "../CSS/loginContent.css";
 import "../CSS/forgetPassword.css";
 import Swal from 'sweetalert2';
-import imgEye from "../assets/show-Password.svg";
+
 
 function LoginContent(){
 const handleForgetPassword = () => {
@@ -211,7 +210,7 @@ const handleForgetPassword = () => {
                 <div className="pt-8 pb-8 pl-4 pr-4 bg-white rounded-lg signin-content">
                     <div className="flex items-center gap-4 heading-signin">
                         <p className="font-semibold">Already a member?</p>
-                        <p className="font-semibold">Sign in!</p>
+                        <p className="font-semibold">Log in!</p>
                     </div>
                     <p className="text-base font-normal P-access">Get access to your orders, save your favorite tools, and get personalized deals made just for you!</p>
                     <form action="">

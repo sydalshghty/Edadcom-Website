@@ -249,3 +249,26 @@
     width: 20px;
     height: 20px;
 }
+@media (max-width: 650px){
+    .login-Content .container .signin-content form .login-with p::before,
+    .login-Content .container .signin-content form .login-with p::after{
+        width: 37%;
+    }
+}
+@media (max-width: 520px){
+    .login-Content .container .signin-content form .login-with p::before,
+    .login-Content .container .signin-content form .login-with p::after{
+        width: 36%;
+    }
+}
+@media (max-width: 500px){
+    .login-Content .container .signin-content form .login-with p::before,
+    .login-Content .container .signin-content form .login-with p::after{
+        width: 30%;
+    }
+}
+@media (max-width: 600px){
+    .login-Content .container .signin-content form .remember-forget-col p{
+        font-size: 15px;
+    }
+}
