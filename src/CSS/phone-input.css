@@ -1,0 +1,11 @@
+.custom-phone-input {
+  border: none !important;
+  box-shadow: none !important;
+}
+.custom-flag-button {
+  background: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,22 @@
+.signin-col{
+    width: 505px;
+    height: 746px;
+    background-color: #FEEEE7;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+@media (max-width: 1250px){
+    .signin-col{
+        width: 430px;
+    }
+}
+@media (max-width: 992px){
+    .signin-col{
+        width: 380px;
+    }
+}
+@media (max-width: 940px){
+    .signin-col{
+        width: 100%;
+    }
+}

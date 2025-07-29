@@ -1,0 +1,101 @@
+.signup-content2 .container .col-register-now{
+    width: 610px;
+    height: 416px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.signup-content2 .container .col-register-now .heading-register p{
+    font-size: 32px;
+    font-weight: 600;
+}
+.signup-content2 .container .col-register-now .heading-register p:nth-child(1){
+    color: #0C0D0D;
+}
+.signup-content2 .container .col-register-now .heading-register p:nth-child(2){
+    color: #F26122;
+}
+.signup-content2 .container .col-register-now .verify-oTP-col .all-inputs input{
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A5A8; 
+    border-radius: 4px;
+    padding: 12px 8px;
+}
+.signup-content2 .container .col-register-now .verify-oTP-col .all-inputs input:focus{
+    border-color: #F26122;
+}
+.signup-content2 .container .col-register-now .p-continue{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8C8F;
+    max-width: 80%;
+}
+.signup-content2 .container .col-register-now .p-continue span{
+    color: #57595B;
+    position: relative;
+}
+.signup-content2 .container .col-register-now .p-continue span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #57595B;
+}
+@media (max-width: 1300px){
+    .signup-content2 .container .col-register-now{
+        width: 550px;
+    }
+}
+@media (max-width: 1250px){
+    .signup-content2 .container .col-register-now{
+        width: 430px;
+    }
+    .signup-content2 .container .col-register-now .heading-register p{
+       font-size: 23px;
+    }
+    .signup-content2 .container .col-register-now .p-continue{
+        max-width: 100%;
+    }
+}
+@media (max-width: 992px){
+    .signup-content2{
+        margin-top: 180px;
+    }
+    .signup-content2 .container .col-register-now .heading-register p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 940px){
+    .signup-content2 .container{
+        flex-direction: column;
+    }
+   .signup-content2 .container .col-register-now{
+        width: 100%;
+         margin-bottom: 40px;
+    }
+}
+@media (max-width: 600px){
+     .signup-content2{
+        margin-top: 20px;
+        overflow: hidden;
+     }
+     .signup-content2 .container .col-register-now .verify-oTP-col .all-inputs input{
+        width: 30px;
+        height: 30px;
+     }
+     .signup-content2 .container .col-register-now .p-continue{
+        max-width: 100% !important;
+        font-size: 14px;
+     }
+     .signup-content2 .container .col-register-now{
+        height: 350px;
+     }
+}
+@media (max-width: 480px){
+   .signup-content2 .container .col-register-now .heading-register p{
+        font-size: 18px;
+    }
+}

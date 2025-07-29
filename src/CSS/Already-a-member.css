@@ -1,0 +1,33 @@
+ .heading-signin{
+    margin-bottom: 10px;
+}
+ .heading-signin p:nth-child(1){
+    font-size: 32px;
+    color: #0C0D0D;
+}
+ .heading-signin p:nth-child(2){
+    font-size: 32px;
+    color: #F26122;
+}
+ .P-access{
+    color: #57595B;
+    margin-bottom: 30px;
+}
+@media (max-width: 1250px){
+    .heading-signin p:nth-child(1),
+    .heading-signin p:nth-child(2){
+        font-size: 23px;
+    }
+}
+@media (max-width: 992px){
+    .heading-signin p:nth-child(1),
+    .heading-signin p:nth-child(2){
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px){
+    .heading-signin p:nth-child(1),
+    .heading-signin p:nth-child(2){
+        font-size: 18px;
+    }
+}

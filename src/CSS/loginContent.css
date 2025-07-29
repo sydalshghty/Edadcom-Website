@@ -6,21 +6,6 @@
     height: 708px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.login-Content .container .signin-content .heading-signin{
-    margin-bottom: 10px;
-}
-.login-Content .container .signin-content .heading-signin p:nth-child(1){
-    font-size: 32px;
-    color: #0C0D0D;
-}
-.login-Content .container .signin-content .heading-signin p:nth-child(2){
-    font-size: 32px;
-    color: #F26122;
-}
-.login-Content .container .signin-content .P-access{
-    color: #57595B;
-    margin-bottom: 30px;
-}
 .login-Content .container .signin-content form .col-email label,
 .login-Content .container .signin-content form .col-password label{
     margin-bottom: 10px;
@@ -55,42 +40,6 @@
 .login-Content .container .signin-content form .col-robot div{
     min-width: 123px;
 }
-.login-Content .container .signin-content form .col-login{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-.login-Content .container .signin-content form .col-login button{
-    width: 100%;
-    height: 48px;
-}
-.login-Content .container .signin-content form .login-with p::before,
-.login-Content .container .signin-content form .login-with p::after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 37%;
-    height: 1px;
-    background-color: #8A8C8F;
-}
-.login-Content .container .signin-content form .login-with p::before{
-    left: 0;
-}
-.login-Content .container .signin-content form .login-with p::after{
-    right: 0;
-}
-.login-Content .container .signin-content form .btn-Google-Facebook{
-    width: 100%;
-    display: flex;
-    gap: 48px;
-    margin-top: 20px;
-}
-.login-Content .container .signin-content form .btn-Google-Facebook .col-google,
-.login-Content .container .signin-content form .btn-Google-Facebook .col-facebook{
-    width: 212px;
-    height: 48px;
-    border: 1px solid #A4A5A8;
-}
 .login-Content .container .register-content{
     width: 562px;
     height: 708px;
@@ -115,14 +64,6 @@
     height: 48px;
     cursor: pointer;
 }
-.login-Content .container .edadcom-apps{
-    margin-top: 60px;
-}
-.login-Content .container .edadcom-apps p:nth-child(2){
-    color: #57595B;
-    max-width: 459px;
-    margin-bottom: 30px;
-}
 @media (max-width: 1250px){
     .login-Content .container .register-content,
     .login-Content .container .signin-content{
@@ -133,10 +74,6 @@
     .login-Content .container .register-content .heading-register p:nth-child(1),
     .login-Content .container .register-content .heading-register p:nth-child(2){
         font-size: 23px;
-    }
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 34%;
     }
 }
 @media (max-width: 992px){
@@ -165,27 +102,14 @@
     .login-Content .container .signin-content{
         margin-bottom: 40px;
     }
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 38%;
-    }
 }
 @media (max-width: 600px){
      .login-Content{
         margin-top: 20px;
         overflow: hidden;
      }
-     .login-Content .container .signin-content form .btn-Google-Facebook .col-google,
-    .login-Content .container .signin-content form .btn-Google-Facebook .col-facebook{
-        width: 130px;
-    }
-    .login-Content .container .edadcom-apps .google-appstore-col,
-    .login-Content .container .signin-content form .btn-Google-Facebook{
+    .login-Content .container .edadcom-apps .google-appstore-col{
         justify-content: center;
-    }
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 32%;
     }
 }
 @media (max-width: 480px){
@@ -248,24 +172,6 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
-}
-@media (max-width: 650px){
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 37%;
-    }
-}
-@media (max-width: 520px){
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 36%;
-    }
-}
-@media (max-width: 500px){
-    .login-Content .container .signin-content form .login-with p::before,
-    .login-Content .container .signin-content form .login-with p::after{
-        width: 30%;
-    }
 }
 @media (max-width: 600px){
     .login-Content .container .signin-content form .remember-forget-col p{

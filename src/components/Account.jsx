@@ -4,9 +4,11 @@ import LoginIcon from "../assets/login-icon.svg";
 import SignUpIcon from "../assets/signup-icon.svg";
 import CartIcon from "../assets/shopping-cart-icon.svg";
 import HeartIcon from "../assets/heart-icon (2).svg";
+import { Link } from "react-router-dom";
 import "../CSS/account.css";
 
 function AccountDepartament({onClose}){
+    
     return(
         <div className="fixed top-0 h-full right-16 account-departament bg-bgIcon">
             <div className="flex items-center justify-between w-full p-4 mb-12 heading-account h-14 bg-whitecolor">
@@ -19,12 +21,16 @@ function AccountDepartament({onClose}){
             <div className="w-full pl-4 pr-4 container-account">
                 <div className="w-full mb-12 L-S-Content">
                     <div className="flex items-center w-full gap-2 pt-4 pb-4 pl-6 pr-6 h-14 bg-whitecolor login-col">
-                        <img src={LoginIcon} alt="login-icon" className="cursor-pointer"/>
-                        <a href="#" className="text-base font-semibold cursor-pointer text-deliveryColor1">Log in</a>
+                        <Link to={"/login"}>
+                            <img src={LoginIcon} alt="login-icon" className="cursor-pointer"/>
+                        </Link>
+                        <Link to={"/login"} className="text-base font-semibold cursor-pointer text-deliveryColor1">Log in</Link>
                     </div>
                     <div className="flex items-center w-full gap-2 pt-4 pb-4 pl-6 pr-6 signUp-col h-14 bg-whitecolor">
-                        <img src={SignUpIcon} alt="signUP" className="cursor-pointer" />
-                        <a href="#" className="text-base font-semibold cursor-pointer text-deliveryColor1">Sign up</a>
+                        <Link to={"/signup"}>
+                            <img src={SignUpIcon} alt="signUP" className="cursor-pointer" />
+                        </Link>
+                        <Link to={"/signup"} className="text-base font-semibold cursor-pointer text-deliveryColor1">Sign up</Link>
                     </div>
                 </div>
                 <div className="C-W-Content">

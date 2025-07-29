@@ -1,0 +1,12 @@
+ .content-checkout{
+    width: 320px;
+}
+ .content-checkout div{
+    margin-bottom: 30px;
+}
+ .content-checkout div .heart-icon{
+    color: red;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}

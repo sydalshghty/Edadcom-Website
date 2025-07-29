@@ -1,0 +1,13 @@
+ .edadcom-apps{
+    margin-top: 60px;
+}
+ .edadcom-apps p:nth-child(2){
+    color: #57595B;
+    max-width: 459px;
+    margin-bottom: 30px;
+}
+@media (max-width: 600px){
+ .edadcom-apps .google-appstore-col{
+        justify-content: center;
+    }
+}

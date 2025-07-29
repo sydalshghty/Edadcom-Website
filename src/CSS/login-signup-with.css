@@ -1,0 +1,54 @@
+ .login-with p::before,
+ .login-with p::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 37%;
+    height: 1px;
+    background-color: #8A8C8F;
+}
+ .login-with p::before{
+    left: 0;
+}
+ .login-with p::after{
+    right: 0;
+}
+@media (max-width: 1250px){
+  .login-with p::before,
+  .login-with p::after{
+        width: 34%;
+    }
+}
+@media (max-width: 880px){
+    .login-with p::before,
+    .login-with p::after{
+        width: 38%;
+    }
+}
+@media (max-width: 600px){
+    .login-with p::before,
+     .login-with p::after{
+        width: 32%;
+    }
+}
+@media (max-width: 650px){
+    .login-with p{
+        font-size: 14px;
+    }
+     .login-with p::before,
+    .login-with p::after{
+        width: 37%;
+    }
+}
+@media (max-width: 520px){
+     .login-with p::before,
+    .login-with p::after{
+        width: 36%;
+    }
+}
+@media (max-width: 500px){
+     .login-with p::before,
+    .login-with p::after{
+        width: 30%;
+    }
+}

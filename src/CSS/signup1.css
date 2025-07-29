@@ -1,0 +1,22 @@
+.signup-content1{
+    width: 100%;
+}
+.signup-content1 .container{
+    width: 100%;
+}
+@media (max-width: 992px){
+    .signup-content1{
+        margin-top: 180px;
+    }
+}
+@media (max-width: 940px){
+    .signup-content1 .container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+     .signup-content1{
+        margin-top: 20px;
+        overflow: hidden;
+     }
+}

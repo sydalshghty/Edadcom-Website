@@ -1,4 +1,3 @@
-import EdadcomLogo  from "../assets/Edadcom_Logo (3).svg";
 import XmarkIcon from "../assets/x-close (1).svg";
 import EnglishIcon from "../assets/English-icon.svg";
 import LocationImg from "../assets/marker-pin-01 (2).svg";
@@ -11,7 +10,7 @@ import featuredImg from "../assets/featured-icon.svg";
 import newArrivalImg from "../assets/shopping-cart-icon.svg";
 import heartImg from "../assets/heart-icon.svg";
 import "../CSS/menu-login.css";
-
+import EdadcomLogo from "../assets/Edadcom_Logo.png"
 function MenuLogin({onClose}){
     return(
         <div className="absolute top-0 left-0 z-50 w-full pt-4 pb-4 menu-login bg-bgIcon">
